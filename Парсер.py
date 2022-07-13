@@ -5,7 +5,7 @@ contest = []
 olymp = 0
 for x in range(len(text)):
     l = [x for x in text[x].split('\t') if x != '']
-    if l[2] == 'Нет':
+    if l[2] == 'РќРµС‚' or l[2] == 'Нет':
         contest.append(int(l[3]) + int(l[4]) + int(l[5]))
     else:
         olymp += 1
